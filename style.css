@@ -13,21 +13,23 @@ body {
 	padding: 0;
 }
 
-.test-container, .test-row {
-  gap: 10px;
+.container, .grid-row {
+  gap: 1px;
 }
 
-.test-container {
+.container {
   display: flex;
+  width: 300px;
+  height: 300px;
   flex-direction: column;
 }
 
-.test-row {
+.grid-row {
   display: flex;
-  flex-basis: 100px;
+  flex-grow: 1;
 }
 
 .square {
   background-color: #000000;
-  flex-basis: 100px;
+  flex-grow: 1;
 }
