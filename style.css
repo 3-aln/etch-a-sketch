@@ -22,6 +22,8 @@ body {
   width: 300px;
   height: 300px;
   flex-direction: column;
+  background-color: #cccccc;
+  border: solid #cccccc 1px;
 }
 
 .grid-row {
@@ -30,6 +32,6 @@ body {
 }
 
 .square {
-  background-color: #000000;
+  background-color: #fbfbfb;
   flex-grow: 1;
 }
