@@ -13,3 +13,12 @@ for (let i = 0; i < 16; i++) {
     gridRow.appendChild(square);
   }
 }
+
+// Add a mouseenter event listener to each square element in the grid
+const squares = document.querySelectorAll(".square");
+squares.forEach((square) => {
+  square.addEventListener("mouseenter", (event) => {
+    // Paint the square black
+    square.classList.add("paint-black");
+  });
+});

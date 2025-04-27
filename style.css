@@ -35,3 +35,7 @@ body {
   background-color: #fbfbfb;
   flex-grow: 1;
 }
+
+.paint-black {
+  background-color: black;
+}
