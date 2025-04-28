@@ -2,14 +2,7 @@ const container = document.querySelector(".container");
 
 setGridSize(16);
 
-// Add a mouseenter event listener to each square element in the grid
-const squares = document.querySelectorAll(".square");
-squares.forEach((square) => {
-  square.addEventListener("mouseenter", () => {
-    // Paint the square black
-    square.classList.add("paint-black");
-  });
-});
+addPaintListeners();
 
 // Add a click event listener to the button that changes grid size
 const gridSizeButton = document.querySelector(".grid-size-button");
@@ -23,6 +16,7 @@ gridSizeButton.addEventListener("click", () => {
 });
 
 function clearGrid() {
+  const squares = document.querySelectorAll(".square");
   squares.forEach((square) => {
     square.classList.remove("paint-black");
   });
@@ -46,4 +40,15 @@ function setGridSize(size) {
       gridRow.appendChild(square);
     }
   }
+}
+
+// Add a mouseenter event listener to each square element in the grid
+function addPaintListeners() {
+  const squares = document.querySelectorAll(".square");
+  squares.forEach((square) => {
+    square.addEventListener("mouseenter", () => {
+      // Paint the square black
+      square.classList.add("paint-black");
+    });
+  }); 
 }
