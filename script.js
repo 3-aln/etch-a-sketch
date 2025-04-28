@@ -15,13 +15,6 @@ gridSizeButton.addEventListener("click", () => {
   if (1 <= newSize && newSize <= 100) setGridSize(newSize);
 });
 
-function clearGrid() {
-  const squares = document.querySelectorAll(".square");
-  squares.forEach((square) => {
-    square.classList.remove("paint-black");
-  });
-}
-
 function setGridSize(size) {
   const rows = document.querySelectorAll(".grid-row");
   rows.forEach((row) => {
@@ -51,4 +44,11 @@ function addPaintListeners() {
       square.classList.add("paint-black");
     });
   }); 
+}
+
+function clearGrid() {
+  const squares = document.querySelectorAll(".square");
+  squares.forEach((square) => {
+    square.classList.remove("paint-black");
+  });
 }
