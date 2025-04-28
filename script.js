@@ -15,6 +15,11 @@ gridSizeButton.addEventListener("click", () => {
   if (1 <= newSize && newSize <= 100) setGridSize(newSize);
 });
 
+const clearButton = document.querySelector(".clear-button");
+clearButton.addEventListener("click", () => {
+  clearGrid();
+});
+
 function setGridSize(size) {
   // Remove all rows of squares
   const rows = document.querySelectorAll(".grid-row");
