@@ -4,7 +4,7 @@ const container = document.querySelector(".container");
 for (let i = 0; i < 16; i++) {
   // Each a flex container is a row of squares
   const gridRow = document.createElement("div");
-  gridRow.classList.add("grid-row")
+  gridRow.classList.add("grid-row");
   container.appendChild(gridRow);
 
   for (let j = 0; j < 16; j++) {
