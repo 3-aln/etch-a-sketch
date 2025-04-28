@@ -19,8 +19,8 @@ body {
 
 .container {
   display: flex;
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  height: 600px;
   flex-direction: column;
   background-color: #cccccc;
   border: solid #cccccc 1px;
