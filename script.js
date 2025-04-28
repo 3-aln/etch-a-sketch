@@ -1,7 +1,6 @@
 const container = document.querySelector(".container");
 
 setGridSize(16);
-
 addPaintListeners();
 
 // Add a click event listener to the button that changes grid size
@@ -33,6 +32,8 @@ function setGridSize(size) {
       gridRow.appendChild(square);
     }
   }
+
+  addPaintListeners();
 }
 
 // Add a mouseenter event listener to each square element in the grid
