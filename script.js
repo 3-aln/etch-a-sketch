@@ -3,8 +3,9 @@ const container = document.querySelector(".container");
 setGridSize(16);
 addPaintListeners();
 
-// Add a click event listener to the button that changes grid size
 const gridSizeButton = document.querySelector(".grid-size-button");
+
+// Add a click event listener to the button that changes grid size
 gridSizeButton.addEventListener("click", () => {
   clearGrid();
   
@@ -15,17 +16,20 @@ gridSizeButton.addEventListener("click", () => {
 });
 
 function setGridSize(size) {
+  // Remove all rows of squares
   const rows = document.querySelectorAll(".grid-row");
   rows.forEach((row) => {
     container.removeChild(row);
   });
 
+  // Create new rows of squares with the required dimensions
   for (let i = 0; i < size; i++) {
-    // Each a flex container is a row of squares
+    // Each flex container is a row of squares
     const gridRow = document.createElement("div");
     gridRow.classList.add("grid-row")
     container.appendChild(gridRow);
   
+    // Populate this row with squares
     for (let j = 0; j < size; j++) {
       const square = document.createElement("div");
       square.classList.add("square");
