@@ -17,7 +17,7 @@ for (let i = 0; i < 16; i++) {
 // Add a mouseenter event listener to each square element in the grid
 const squares = document.querySelectorAll(".square");
 squares.forEach((square) => {
-  square.addEventListener("mouseenter", (event) => {
+  square.addEventListener("mouseenter", () => {
     // Paint the square black
     square.classList.add("paint-black");
   });
